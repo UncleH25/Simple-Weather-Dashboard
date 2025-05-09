@@ -24,3 +24,9 @@ function displayWeatherInfo(weatherData)
 {
 
 }
+
+//Get Weather Icon
+function getWeatherIcon(iconCode) 
+{
+    
+}
