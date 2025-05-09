@@ -66,3 +66,86 @@ button[type="submit"]:hover
 {
     background-color: #e1b693;
 }
+
+/* Style for the weather info display section */
+.weather-info
+{
+    background-color: #98afba;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 450px;
+    height: 450px;
+}
+h2
+{
+    font-size: 2em;
+    margin: 0;
+    color: #344a53;
+    text-align: center;
+}
+/* Style for the weather details */
+.location
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.temperature
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.humidity
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.wind-speed
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.weather-condition
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.description
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.weather-icon 
+{
+    font-size: 5em; 
+    margin: 20px auto;   
+    text-align: center; 
+    display: block;   
+    line-height: 1;   
+}
+.weather-icon-error
+{
+    font-size: 1.2em;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+}
+.sunrise
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
+.sunset
+{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #344a53;
+}
