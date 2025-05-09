@@ -30,3 +30,9 @@ function getWeatherIcon(iconCode)
 {
     
 }
+
+//Display Error Message
+function displayErrorMessage(errorMessage) 
+{
+    
+}
