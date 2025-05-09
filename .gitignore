@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# VS Code settings (optional, if you use VS Code)
+.vscode/
+
+# API keys
+scripts/config.js
