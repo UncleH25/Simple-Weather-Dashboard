@@ -6,3 +6,21 @@ const locationInput = document.querySelector(".location-input");
 const weatherSection = document.querySelector(".weather-info");
 //API Key
 const apiKey = config.apiKey;
+
+//Location Search Event
+locationForm.addEventListener("submit", (event) => 
+{
+    
+});
+
+//Get Weather Data
+async function getWeatherData(location) 
+{
+
+}
+
+//Display Weather Info
+function displayWeatherInfo(weatherData) 
+{
+
+}
