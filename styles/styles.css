@@ -149,3 +149,36 @@ h2
     margin: 10px 0;
     color: #344a53;
 }
+
+/* Style for the refresh button */
+.refresh-button
+{
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #a88261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    -ms-transform: translate(95%, 95%);
+    transform: translate(95%, 95%);
+}
+.refresh-button:hover
+{
+    background-color: #e1b693;
+}
+
+/* Style for footer */
+footer
+{
+    text-align: center;
+    margin-top: 30px;
+}
+p
+{
+    font-size: 1.2em;
+    margin: 0;
+    color: #344a53;
+}
