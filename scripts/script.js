@@ -8,7 +8,7 @@ const weatherSection = document.querySelector(".weather-info");
 const apiKey = config.apiKey;
 
 //Location Search Event
-locationForm.addEventListener("submit", (event) => 
+locationForm.addEventListener("submit", async event => 
 {
     //Prevent the page from refreshing
     event.preventDefault();
@@ -19,7 +19,21 @@ locationForm.addEventListener("submit", (event) =>
     //If the location value is true
     if (location) 
     {
-        
+        //Try to get the weather data
+        try
+        {
+            //Fetch the weather data from the API
+            const weatherData = await getWeatherData(location);
+            //Call the function to display the weather data
+            displayWeatherInfo(weatherData);
+
+        }//Catch any errors
+        catch (error) 
+        {
+            console.error("Error fetching weather data:", error);
+            //Display an error message
+            displayErrorMessage("Unable to fetch weather data. Please try again later.", error);
+        }
     } 
     else 
     {
