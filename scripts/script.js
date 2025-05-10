@@ -140,7 +140,7 @@ function displayWeatherInfo(weatherData)
     weatherSection.appendChild(sunsetElement);
 
     //Weather Icon
-    const weatherIconElement = document.createElement("img");
+    const weatherIconElement = document.createElement("p");
     weatherIconElement.textContent = getWeatherIcon(id);
     weatherIconElement.classList.add("weather-icon");
     weatherSection.appendChild(weatherIconElement);
