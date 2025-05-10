@@ -167,6 +167,7 @@ function getWeatherIcon(iconCode)
             return "🌥️";
         default:
             return "❓";
+    }
 }
 
 //Display Error Message
