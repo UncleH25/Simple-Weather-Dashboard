@@ -149,7 +149,24 @@ function displayWeatherInfo(weatherData)
 //Get Weather Icon
 function getWeatherIcon(iconCode) 
 {
-    
+    //Switch case to get the icon based on the weather condition
+    switch (true) {
+        case (iconCode >= 200 && iconCode < 300):
+            return "⛈️";
+        case (iconCode >= 300 && iconCode < 400):
+            return "🌦️";
+        case (iconCode >= 500 && iconCode < 600):
+            return "🌧️";
+        case (iconCode >= 600 && iconCode < 700):
+            return "❄️";
+        case (iconCode >= 700 && iconCode < 800):
+            return "🌫️"; 
+        case (iconCode === 800):
+            return "☀️";   
+        case (iconCode > 801 && iconCode < 810):
+            return "🌥️";
+        default:
+            return "❓";
 }
 
 //Display Error Message
