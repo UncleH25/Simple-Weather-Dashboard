@@ -18,7 +18,11 @@ A simple weather application that allows users to check current weather conditio
 3. Enter a city name and get the weather!
 
 ## 📸 Screenshot
+[Screen On Load Up](https://github.com/UncleH25/Simple-Weather-Dashboard/blob/main/screenshot/screenshot1.png)
 
+[Screen When Input Is Not Given](https://github.com/UncleH25/Simple-Weather-Dashboard/blob/main/screenshot/screenshot2.png)
+
+[SCreen After Inputting And Pressing The Search Button](https://github.com/UncleH25/Simple-Weather-Dashboard/blob/main/screenshot/screenshot3.png)
 
 ## 🧠 Lessons Learned
 - Working with APIs
