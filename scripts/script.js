@@ -14,7 +14,7 @@ locationForm.addEventListener("submit", (event) =>
     event.preventDefault();
     
     //Get the location input value
-    const location = locationInput.value.trim();
+    const location = locationInput.value;
 
     
 });
