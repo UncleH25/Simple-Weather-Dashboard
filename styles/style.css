@@ -130,7 +130,7 @@ h2
     display: block;   
     line-height: 1;   
 }
-.weather-icon-error
+.errorDisplay
 {
     font-size: 1.2em;
     margin: 20px auto;

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simple Weather Dashboard</title>
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/config.js"></script>
         <script src="scripts/script.js" defer></script>
     </head>
     <body>      
@@ -16,11 +17,12 @@
             <main>
                <!-- Form to input location and a button to get weather information -->
                 <form class="location-form">
-                    <input type="text" class="location-input" placeholder="Enter location" required>
+                    <input type="text" class="location-input" placeholder="Enter location">
                     <button type="submit">Get Weather</button>
                 </form>
                 <!-- Section to display weather information -->
                 <section class="weather-info" style="display: none;">
+                    <h2>Weather Information</h2>
                 </section>
             </main>
         <!-- Footer -->

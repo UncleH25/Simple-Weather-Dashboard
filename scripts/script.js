@@ -1,7 +1,7 @@
 //Simple Weather Dashboard
 
 // Global Variables
-const locationForm = document.querySelector(".location-info");
+const locationForm = document.querySelector(".location-form");
 const locationInput = document.querySelector(".location-input");
 const weatherSection = document.querySelector(".weather-info");
 //API Key
@@ -16,7 +16,15 @@ locationForm.addEventListener("submit", (event) =>
     //Get the location input value
     const location = locationInput.value;
 
-    
+    //If the location value is true
+    if (location) 
+    {
+        
+    } 
+    else 
+    {
+        displayErrorMessage("Please enter a location.");
+    } 
 });
 
 //Get Weather Data
@@ -40,5 +48,24 @@ function getWeatherIcon(iconCode)
 //Display Error Message
 function displayErrorMessage(errorMessage) 
 {
-    
+    //Clear any existing content in the section
+    weatherSection.innerHTML = "";
+
+    //Create a paragraph element for the error message
+    const errorParagraph = document.createElement("p");
+    errorParagraph.textContent = errorMessage;
+
+    //Add a class for styling (optional)
+    errorParagraph.classList.add("error-message");
+
+    //Append the error message to the section
+    weatherSection.appendChild(errorParagraph);
+
+    //Make the section visible
+    weatherSection.style.display = "block";
+
+    //Remove the error message after 5 seconds
+    setTimeout(() => {
+        weatherSection.style.display = "none";
+    }, 2000);
 }
