@@ -141,7 +141,7 @@ function displayWeatherInfo(weatherData)
 
     //Weather Icon
     const weatherIconElement = document.createElement("img");
-    weatherIconElement.textContent = getWeatherIcon(id);
+    weatherIconElement.textContent = getWeatherIcon(iconCode);
     weatherIconElement.classList.add("weather-icon");
     weatherSection.appendChild(weatherIconElement);
 }
