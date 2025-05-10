@@ -13,6 +13,10 @@ locationForm.addEventListener("submit", (event) =>
     //Prevent the page from refreshing
     event.preventDefault();
     
+    //Get the location input value
+    const location = locationInput.value.trim();
+
+    
 });
 
 //Get Weather Data
