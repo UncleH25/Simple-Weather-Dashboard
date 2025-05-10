@@ -10,6 +10,8 @@ const apiKey = config.apiKey;
 //Location Search Event
 locationForm.addEventListener("submit", (event) => 
 {
+    //Prevent the page from refreshing
+    event.preventDefault();
     
 });
 
