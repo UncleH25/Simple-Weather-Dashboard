@@ -72,7 +72,78 @@ function displayWeatherInfo(weatherData)
     console.log(weatherData);
 
     //Object destructuring to get the data
-    
+    const 
+    {
+        name: location,
+        main: { temp: temperature, humidity },
+        wind: { speed: windSpeed },
+        weather: [{ main: weatherCondition, description, id }],
+        sys: { country, sunrise, sunset }
+    } = weatherData;
+
+    //Clear any existing content in the section
+    weatherSection.innerHTML = "";
+    //Make the section visible
+    weatherSection.style.display = "block";
+
+    //Display the data in the section
+    //Location
+    const locationElement = document.createElement("h2");
+    locationElement.textContent = location;
+    locationElement.classList.add("location");
+    weatherSection.appendChild(locationElement);
+
+    //Temperature
+    const temperatureElement = document.createElement("p");
+    temperatureElement.textContent = `Temperature: ${temperature}°C`;
+    temperatureElement.classList.add("temperature");
+    weatherSection.appendChild(temperatureElement);
+
+    //Humidity
+    const humidityElement = document.createElement("p");
+    humidityElement.textContent = `Humidity: ${humidity}%`;
+    humidityElement.classList.add("humidity");
+    weatherSection.appendChild(humidityElement);
+
+    //Wind Speed
+    const windSpeedElement = document.createElement("p");
+    windSpeedElement.textContent = `Wind Speed: ${windSpeed} m/s`;
+    windSpeedElement.classList.add("wind-speed");
+    weatherSection.appendChild(windSpeedElement);
+
+    //Weather Condition
+    const weatherConditionElement = document.createElement("p");
+    weatherConditionElement.textContent = `Weather Condition: ${weatherCondition}`;
+    weatherConditionElement.classList.add("weather-condition");
+    weatherSection.appendChild(weatherConditionElement);
+
+    //Weather Description
+    const weatherDescriptionElement = document.createElement("p");
+    weatherDescriptionElement.textContent = `Description: ${description}`;
+    weatherDescriptionElement.classList.add("weather-description");
+    weatherSection.appendChild(weatherDescriptionElement);
+
+    //Sunrise
+    const sunriseElement = document.createElement("p");
+    const sunriseDate = new Date(sunrise * 1000);
+    const sunriseTime = sunriseDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    sunriseElement.textContent = `Sunrise: ${sunriseTime}`;
+    sunriseElement.classList.add("sunrise");
+    weatherSection.appendChild(sunriseElement);
+
+    //Sunset
+    const sunsetElement = document.createElement("p");
+    const sunsetDate = new Date(sunset * 1000);
+    const sunsetTime = sunsetDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    sunsetElement.textContent = `Sunset: ${sunsetTime}`;
+    sunsetElement.classList.add("sunset");
+    weatherSection.appendChild(sunsetElement);
+
+    //Weather Icon
+    const weatherIconElement = document.createElement("img");
+    weatherIconElement.textContent = getWeatherIcon(id);
+    weatherIconElement.classList.add("weather-icon");
+    weatherSection.appendChild(weatherIconElement);
 }
 
 //Get Weather Icon
