@@ -68,7 +68,11 @@ async function getWeatherData(location)
 //Display Weather Info
 function displayWeatherInfo(weatherData) 
 {
+    //Display the data retrieved from the API
+    console.log(weatherData);
 
+    //Object destructuring to get the data
+    
 }
 
 //Get Weather Icon
