@@ -44,7 +44,25 @@ locationForm.addEventListener("submit", async event =>
 //Get Weather Data
 async function getWeatherData(location) 
 {
+    //API URL
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
 
+    //Response from the API
+    const response = await fetch(apiUrl);
+
+    //Check if the response is ok
+    console.log(response);
+
+    //If the response is not ok, throw an error
+    if (!response.ok)
+    {
+        //If not ok, throw an error
+        throw new Error("Network response was not ok");
+    }
+
+    //Parse the response as JSON
+    //If the response is ok, return the JSON data
+    return await response.json();
 }
 
 //Display Weather Info
