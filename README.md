@@ -27,3 +27,6 @@ A simple weather application that allows users to check current weather conditio
 ## 🧠 Lessons Learned
 - Working with APIs
 - LocalStorage
+
+## 📌 License
+This project is open source and free to use under the **MIT License**.
