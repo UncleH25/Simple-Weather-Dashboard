@@ -141,29 +141,29 @@ function displayWeatherInfo(weatherData)
 
     //Weather Icon
     const weatherIconElement = document.createElement("img");
-    weatherIconElement.textContent = getWeatherIcon(iconCode);
+    weatherIconElement.textContent = getWeatherIcon(id);
     weatherIconElement.classList.add("weather-icon");
     weatherSection.appendChild(weatherIconElement);
 }
 
 //Get Weather Icon
-function getWeatherIcon(iconCode) 
+function getWeatherIcon(id) 
 {
     //Switch case to get the icon based on the weather condition
     switch (true) {
-        case (iconCode >= 200 && iconCode < 300):
+        case (id >= 200 && id < 300):
             return "⛈️";
-        case (iconCode >= 300 && iconCode < 400):
+        case (id >= 300 && id < 400):
             return "🌦️";
-        case (iconCode >= 500 && iconCode < 600):
+        case (id >= 500 && id < 600):
             return "🌧️";
-        case (iconCode >= 600 && iconCode < 700):
+        case (id >= 600 && id < 700):
             return "❄️";
-        case (iconCode >= 700 && iconCode < 800):
+        case (id >= 700 && id < 800):
             return "🌫️"; 
-        case (iconCode === 800):
+        case (id === 800):
             return "☀️";   
-        case (iconCode > 801 && iconCode < 810):
+        case (id > 801 && id < 810):
             return "🌥️";
         default:
             return "❓";
